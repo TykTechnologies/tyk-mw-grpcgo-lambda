@@ -14,7 +14,8 @@ import (
 )
 
 const (
-	listenAddress = "/tmp/foo.sock"
+	listenNetwork = "unix"          // can be unix || tcp
+	listenAddress = "/tmp/foo.sock" // can be path to unix socket || ip/port combo e.g. 127.0.0.1:3333
 	awsRegion     = endpoints.EuWest2RegionID
 )
 
@@ -34,7 +35,7 @@ func main() {
 		os.Exit(0)
 	}()
 
-	listener, err := net.Listen("unix", listenAddress)
+	listener, err := net.Listen(listenNetwork, listenAddress)
 	if err != nil {
 		log.Println(errors.Wrap(err, "error opening listener"))
 		os.Exit(1)
