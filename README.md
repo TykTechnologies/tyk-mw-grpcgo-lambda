@@ -2,7 +2,7 @@
 
 ## Start the gRPC plugin
 ```
-go get -u github.com/asoorm/tyk-mw-grpcgo-lambda
+go get -u github.com/TykTechnologies/tyk-mw-grpcgo-lambda
 tyk-mw-grpcgo-lambda
 
 ---
