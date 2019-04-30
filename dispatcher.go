@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	coprocess "github.com/TykTechnologies/tyk-protobuf"
+	coprocess "github.com/asoorm/tyk-mw-grpcgo-lambda/proto/go"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/lambda"

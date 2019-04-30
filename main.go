@@ -7,7 +7,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	coprocess "github.com/TykTechnologies/tyk-protobuf"
+	coprocess "github.com/asoorm/tyk-mw-grpcgo-lambda/proto/go"
 	"github.com/aws/aws-sdk-go/aws/endpoints"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
